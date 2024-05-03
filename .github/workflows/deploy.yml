@@ -7,4 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-22.04
-
+    steps:
+      - ls -lha
+      - pwd
