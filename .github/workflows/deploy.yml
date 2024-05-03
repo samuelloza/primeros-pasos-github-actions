@@ -11,10 +11,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: "Lista archivos"
-        run: |
-          ls -lha
-          pwd
-          id
+        run: exit 1
 
   deploy:
     needs: build
