@@ -5,7 +5,18 @@ on:
       - main
 
 jobs:
-  hola-mundo:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "Lista archivos"
+        run: |
+          ls -lha
+          pwd
+          id
+
+  deploy:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
