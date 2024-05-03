@@ -8,7 +8,6 @@ jobs:
   hola-mundo:
     runs-on: ubuntu-22.04
     steps:
-      - name: "Obtiene codigo"
       - uses: actions/checkout@v4
 
       - name: "Lista archivos"
